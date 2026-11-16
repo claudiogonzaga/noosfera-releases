@@ -7,3 +7,10 @@ Este repositório guarda só os **instaladores** da Noosfera — o APK do celula
 - Os apps procuram atualização em `consciencia.eco.br/noosfera/versao` e conferem o SHA-256 do instalador antes de instalar.
 
 Cada versão é uma release com a etiqueta `android-vX.Y.Z` ou `mac-vX.Y.Z`; o corpo da release traz as notas e a linha `SHA-256: …` do instalador.
+
+## Publicar uma versão
+
+```
+./publicar.sh android 1.134.0 noosfera-1.134.0.apk notas.md
+./publicar.sh mac 1.10.1 Noosfera-1.10.1.dmg notas.md
+```
